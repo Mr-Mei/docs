@@ -1,10 +1,118 @@
-module.exports = {
-  themeConfig: {
-    logo: '/images/logo.svg',
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'External', link: 'https://google.com' },
-    ]
-  }
-}
+import { defaultTheme } from "vuepress"
+import { searchPlugin } from '@vuepress/plugin-search'
+export default {
+  lang: "zh-CN",
+  title: "编程宝典",
+  description: "小书生的笔记文档",
+  head: [["link", { rel: "icon", href: "/images/logo.svg" }]],
+  plugins: [
+    searchPlugin({
+      locales: {
+        // '/': {
+        //   placeholder: 'Search',
+        // },
+        '/zh/': {
+          placeholder: '搜索',
+        },
+      },
+    }),
+  ],
+  theme: defaultTheme({
+    // 默认主题配置
+    logo: "/images/logo.svg",
+    navbar: [
+      // { text: "首页", link: "/" },
+      { text: "前端", link: "/前端/前端目录.md" },
+      { text: "NodeJs", link: "/NodeJs/NodeJs目录.md" },
+      { text: "Python", link: "/Python/Python目录.md" },
+      { text: "博客园", link: "https://www.cnblogs.com/meijifu/" },
+      { text: "github", link: "https://github.com/Mr-Mei" },
+      { text: "gitee", link: "https://gitee.com/Mr-May" },
+    ],
+    sidebar: [
+      {
+        text: "编程宝典", // 标题
+        link: "/", // 标题跳转连接
+      },
+     '/目录/',
+      {
+        text: "前端",
+        collapsible: true, // 控制是否折叠
+        // sidebarDepth: 1,
+        children: [
+          "/前端/前端目录.md",
+          {
+            text: "HTML",
+            collapsible: true, // 控制是否折叠
+            children: [
+              "/前端/HTML/HTML目录.md",
+              "/前端/HTML/HTML基础.md",
+              "/前端/HTML/HTML5基础知识总结.md",
+            ],
+          },
+          {
+            text: "CSS",
+            collapsible: true, // 控制是否折叠
+            children: [
+              "/前端/CSS/CSS目录.md",
+              "/前端/CSS/CSS基础.md"
+            ],
+          },
+          {
+            text: "JS",
+            collapsible: true, // 控制是否折叠
+            children: [
+              "/前端/JS/JS目录.md",
+              "/前端/JS/JS基础.md"
+            ],
+          },
+          {
+            text: "Vue",
+            collapsible: true, // 控制是否折叠
+            children: ["/前端/Vue/Vue目录.md"],
+          },
+          {
+            text: "React",
+            collapsible: true, // 控制是否折叠
+            children: ["/前端/React/React目录.md"],
+          },
+          {
+            text: "小程序",
+            collapsible: true, // 控制是否折叠
+            children: ["/前端/小程序/小程序目录.md"],
+          },
+          {
+            text: "Uniapp",
+            collapsible: true, // 控制是否折叠
+            children: ["/前端/Uniapp/Uniapp目录.md"],
+          },
+          {
+            text: "GraceUI",
+            collapsible: true, // 控制是否折叠
+            children: ["/前端/GraceUI/GraceUI目录.md"],
+          },
+          {
+            text: "其他",
+            collapsible: true, // 控制是否折叠
+            children: ["/前端/其他/其他目录.md"],
+          },
+          "/前端/学习路线.md",
+        ],
+      },
+      {
+        text: 'NodeJs',
+        collapsible: true,
+        children: [
+          "/NodeJs/NodeJs目录.md",
+        ]
+      },
+      {
+        text: 'Python',
+        collapsible: true,
+        children: [
+          "/Python/Python目录.md",
+        ]
+      }
+    ],
+  }),
+};
