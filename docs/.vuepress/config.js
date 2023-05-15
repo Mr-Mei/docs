@@ -47,6 +47,7 @@ export default {
             children: [
               "/前端/HTML/HTML目录.md",
               "/前端/HTML/HTML基础.md",
+              "/前端/HTML/HTML5语义化.md",
               "/前端/HTML/HTML5基础知识总结.md",
             ],
           },
@@ -63,7 +64,8 @@ export default {
             collapsible: true, // 控制是否折叠
             children: [
               "/前端/JS/JS目录.md",
-              "/前端/JS/JS基础.md"
+              "/前端/JS/JS基础.md",
+              "/前端/JS/JTemplate.md",
             ],
           },
           {
