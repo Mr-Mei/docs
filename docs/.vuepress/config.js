@@ -56,7 +56,8 @@ export default {
             collapsible: true, // 控制是否折叠
             children: [
               "/前端/CSS/CSS目录.md",
-              "/前端/CSS/CSS基础.md"
+              "/前端/CSS/CSS基础.md",
+              "/前端/CSS/CSS常用技巧.md"
             ],
           },
           {
