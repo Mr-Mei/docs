@@ -68,6 +68,7 @@ export default {
               "/前端/JS/JS目录.md",
               "/前端/JS/JS基础.md",
               "/前端/JS/JS构造函数详解.md",
+              "/前端/JS/JS常用方法.md",
               "/前端/JS/JTemplate.md",
             ],
           },
