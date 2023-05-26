@@ -75,7 +75,11 @@ export default {
           {
             text: "Vue",
             collapsible: true, // 控制是否折叠
-            children: ["/前端/Vue/Vue目录.md"],
+            children: [
+              "/前端/Vue/Vue目录.md",
+              "/前端/Vue/Vue2基础知识.md",
+              "/前端/Vue/Vue3常用知识点总结.md",
+            ],
           },
           {
             text: "React",
