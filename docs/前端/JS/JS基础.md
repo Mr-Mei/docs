@@ -1,4 +1,4 @@
-# js基础
+# JS基础
 
 ## 一、JavaScript简介
 

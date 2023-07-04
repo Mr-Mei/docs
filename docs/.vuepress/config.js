@@ -69,7 +69,8 @@ export default {
               "/前端/JS/JS基础.md",
               "/前端/JS/JS构造函数详解.md",
               "/前端/JS/JS常用方法.md",
-              "/前端/JS/JTemplate.md",
+              "/前端/JS/JS对浏览器URL的操作.md",
+              "/前端/JS/JTemplate语法.md",
             ],
           },
           {
@@ -79,6 +80,7 @@ export default {
               "/前端/Vue/Vue目录.md",
               "/前端/Vue/Vue2基础知识.md",
               "/前端/Vue/Vue3常用知识点总结.md",
+              "/前端/Vue/Vue3开发技巧.md",
             ],
           },
           {
@@ -104,7 +106,11 @@ export default {
           {
             text: "其他",
             collapsible: true, // 控制是否折叠
-            children: ["/前端/其他/其他目录.md"],
+            children: [
+              "/前端/其他/其他目录.md",
+              "/前端/其他/GitHub个人令牌创建.md",
+              "/前端/其他/Git常用命令大全.md",
+            ],
           },
           "/前端/学习路线.md",
         ],

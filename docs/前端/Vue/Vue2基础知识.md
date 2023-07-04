@@ -50,7 +50,7 @@ vue两大特性： **数据驱动视图**，**双向数据绑定**
 - Chrome浏览器在线安装 vue-devtools： https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
 - FireFox浏览器在线安装： https://addons.mozilla.org/zh-CN/firefox/addon/vue-js-devtools/
 
-### 6. {{ }}
+### 6. `{{ }}`
 
 - 插值表达式Mustache，只是内容占位符，不覆盖原有内容
 - 只能用在元素内容节点，不能用在属性节点 ` <p>性别: {{ sex }}</p> `
