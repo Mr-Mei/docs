@@ -3,7 +3,7 @@ import { searchPlugin } from '@vuepress/plugin-search'
 export default {
   lang: "zh-CN",
   title: "编程宝典",
-  // base:'./',
+  base:'./',
   description: "小书生的笔记文档",
   head: [["link", { rel: "icon", href: "/images/logo.svg" }]],
   plugins: [
